@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,13 @@
     <title>Roupas</title>
 </head>
 <body>
-    
+
     <header>
         <nav>
             <ul>
-                <li><a href="#">Feminino</a></li>
-                <li><a href="#">Masculino</a></li>
-                <li><a href="#">Unissex</a></li>
+                <li><a href="#feminino">Feminino</a></li>
+                <li><a href="#masculino">Masculino</a></li>
+                <li><a href="#unissex">Unissex</a></li>
             </ul>
         </nav>
     </header>
@@ -22,46 +23,129 @@
         <h1>As roupas da moda</h1>
     </div>
 
-    <section class="catalo-roupas">
+    <section class="catalogo-roupas">
 
-        <div class="card-roupa">
-            <img class="img" src="img/eroupa 1.jpg.jpeg" alt="">
-            <p>Descrição: </p>
-            <p>Tamanho: </p>
-        </div>
-
-        <div class="card-roupa">
-            <img class="img" src="img/roupa 2.jpg.jpeg" alt="">
-            <p>Descrição: </p>
-            <p>Tamanho: </p>
-        </div>
-
-        <div class="card-roupa">
-            <img class="img" src="img/roupa 3.jpg.jpeg" alt="">
-            <p>Descrição: </p>
-            <p>Tamanho: </p>
-        </div>
-        
-        <div class="card-roupa">
-            <img class="img" src="img/roupa 4.jpg.jpeg" alt="">
-            <p>Descrição: </p>
-            <p>Tamanho: </p>
+        <div class="card-roupa" id="feminino">
+            <img class="img" src="img/eroupa 1.jpg.jpeg" alt="Roupa 1">
+            <p>Descrição: Camiseta</p>
+            <p>Tamanho: P</p>
+            <h2>Detalhes</h2>
+            <ol>
+                <li>Estilista: Ana</li>
+                <li>Cores: Vermelho e preto</li>
+            </ol>
+            <button>Comprar</button>
         </div>
 
-        <div class="card-roupa">
-            <img class="img" src="img/roupa5.jpg.jpeg" alt="">
-            <p>Descrição: </p>
-            <p>Tamanho: </p>
+        <div class="card-roupa" id="masculino">
+            <img class="img" src="img/roupa 2.jpg.jpeg" alt="Roupa 2">
+            <p>Descrição: Calça</p>
+            <p>Tamanho: M</p>
+            <h2>Detalhes</h2>
+            <ol>
+                <li>Estilista: Pedro</li>
+                <li>Cores: Azul e preto</li>
+            </ol>
+            <button>Comprar</button>
+        </div>
+
+        <div class="card-roupa" id="unissex">
+            <img class="img" src="img/roupa 3.jpg.jpeg" alt="Roupa 3">
+            <p>Descrição: Jaqueta</p>
+            <p>Tamanho: G</p>
+            <h2>Detalhes</h2>
+            <ol>
+                <li>Estilista: Julia</li>
+                <li>Cores: Preto e branco</li>
+            </ol>
+            <button>Comprar</button>
         </div>
 
         <div class="card-roupa">
-            <img class="img" src="img/roupa 6.jpg.jpeg" alt="">
-            <p>Descrição: </p>
-            <p>Tamanho: </p>
+            <img class="img" src="img/roupa 4.jpg.jpeg" alt="Roupa 4">
+            <p>Descrição: Vestido</p>
+            <p>Tamanho: M</p>
+            <h2>Detalhes</h2>
+            <ol>
+                <li>Estilista: Maria</li>
+                <li>Cores: Rosa e branco</li>
+            </ol>
+            <button>Comprar</button>
         </div>
+
+        <div class="card-roupa">
+            <img class="img" src="img/roupa5.jpg.jpeg" alt="Roupa 5">
+            <p>Descrição: Moletom</p>
+            <p>Tamanho: GG</p>
+            <h2>Detalhes</h2>
+            <ol>
+                <li>Estilista: Lucas</li>
+                <li>Cores: Cinza e preto</li>
+            </ol>
+            <button>Comprar</button>
+        </div>
+
+        <div class="card-roupa">
+            <img class="img" src="img/roupa 6.jpg.jpeg" alt="Roupa 6">
+            <p>Descrição: Saia</p>
+            <p>Tamanho: P</p>
+            <h2>Detalhes</h2>
+            <ol>
+                <li>Estilista: Carla</li>
+                <li>Cores: Vermelho e branco</li>
+            </ol>
+            <button>Comprar</button>
+        </div>
+
     </section>
 
+    <section class="painel-usuario">
 
+        <h1>Fale conosco</h1>
+
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <h1>Lançamentos</h1>
+
+        <table>
+            <tr>
+                <th>Peça</th>
+                <th>Tamanho</th>
+                <th>Quantidade</th>
+            </tr>
+            <tr>
+                <td>Camiseta</td>
+                <td>P</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Calça</td>
+                <td>M</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Vestido</td>
+                <td>G</td>
+                <td>8</td>
+            </tr>
+        </table>
+
+    </section>
+
+    <footer>
+        <p>Compras Online 2026 – Desenvolvido por: Seu Nome</p>
+    </footer>
 
 </body>
 </html>

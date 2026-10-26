@@ -1,66 +1,165 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background-color: #d9d9d9
+body {
+    background-color: #d9d9d9;
+    font-family: Arial, sans-serif;
 }
 
-nav{
+nav {
     background-color: #ffffff;
     padding: 15px;
 }
 
-ul{
+nav ul {
     display: flex;
     justify-content: center;
     gap: 30px;
     list-style: none;
 }
 
-a{
+a {
     color: red;
     text-decoration: underline;
     transition: 1s ease-in-out;
 }
 
-a:hover{
+a:hover {
     font-size: 20px;
     text-shadow: 5px 5px 5px rgba(255, 0, 0, 0.5);
 }
 
-h1{
+h1 {
     color: rgb(107, 24, 24);
     text-align: center;
+    margin: 20px;
 }
 
-.banner{
+.banner {
     margin-bottom: 40px;
 }
 
-.catalo-roupas{
-    margin-left: 15%;
+/* Catálogo */
+.catalogo-roupas {
+    margin: 0 5%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-
+    gap: 20px;
 }
 
 .card-roupa {
-    width: 250px;
-    height: 250px;
     border: 1px solid #ff4949;
+    background-color: white;
     padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #999;
+    overflow: hidden;
+}
+
+.img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+/* R11: criatividade com zoom */
+.card-roupa:hover .img {
+    transform: scale(1.1);
+}
+
+.card-roupa h2 {
+    color: rgb(107, 24, 24);
+    font-size: 18px;
+    margin: 10px;
+}
+
+.card-roupa ol {
+    text-align: left;
+    margin: 10px 25px;
+}
+
+button {
+    background-color: rgb(107, 24, 24);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: red;
+    transform: scale(1.05);
+}
+
+/* Formulário */
+.painel-usuario {
+    background-color: white;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #999;
+    padding: 12px;
     text-align: center;
 }
 
-.img{
-   width: 200px;
-   height: 200px;
-   object-fit: cover;
+th {
+    background-color: rgb(107, 24, 24);
+    color: white;
 }
 
+tr:hover {
+    background-color: #f5dada;
+}
 
+/* Rodapé */
+footer {
+    background-color: rgb(107, 24, 24);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
 
+/* Responsividade */
+@media (max-width: 700px) {
+    .catalogo-roupas {
+        grid-template-columns: 1fr;
+    }
+}
