@@ -1,0 +1,66 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box
+}
+
+body{
+    background-color: #d9d9d9
+}
+
+nav{
+    background-color: #ffffff;
+    padding: 15px;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+a{
+    color: red;
+    text-decoration: underline;
+    transition: 1s ease-in-out;
+}
+
+a:hover{
+    font-size: 20px;
+    text-shadow: 5px 5px 5px rgba(255, 0, 0, 0.5);
+}
+
+h1{
+    color: rgb(107, 24, 24);
+    text-align: center;
+}
+
+.banner{
+    margin-bottom: 40px;
+}
+
+.catalo-roupas{
+    margin-left: 15%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+}
+
+.card-roupa {
+    width: 250px;
+    height: 250px;
+    border: 1px solid #ff4949;
+    padding: 10px;
+    text-align: center;
+}
+
+.img{
+   width: 200px;
+   height: 200px;
+   object-fit: cover;
+}
+
+
+
